@@ -19,6 +19,7 @@ def get_n_length_words( n):
             nLength.add(word.upper())
     return sorted(nLength)
 
+
 def x( n):
     nLength = get_n_length_words(n)
     result = "[\n"
