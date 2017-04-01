@@ -29,5 +29,5 @@ def x( n):
     return result + "\n]"
 
 
-print(get_n_length_words(4))
-print(x( 4))
+print(get_n_length_words(5))
+print(x( 5))
