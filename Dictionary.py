@@ -9,7 +9,7 @@ def count_underscore(word):
     return i
 
 
-def get_n_length_words( n):
+def get_n_length_words(n):
     words = list(wn.words())
     nLength = set()
     for word in words:
@@ -20,15 +20,11 @@ def get_n_length_words( n):
     return sorted(nLength)
 
 
-def x( n):
+def get_n_length_json(n):
     nLength = get_n_length_words(n)
     result = "[\n"
     i = 0
     for word in nLength:
         result = result + "{\n\"word\": \"" + word + "\",\n\"score\": 1" + "\n},\n"
     result = result[:-2]
-    return result + "\n]"
-
-
-print(get_n_length_words(5))
-print(x( 5))
+    return result + "\n]" + "\n"
